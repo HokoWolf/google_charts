@@ -1,0 +1,206 @@
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  background-color: #faf9f8;
+  font-family: Tahoma;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-form {
+  position: relative;
+  width: 1140px;
+  height: 780px;
+  padding: 40px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.headline {
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.graphic-name {
+  font-size: 24px;
+}
+
+.chart {
+  width: 100%;
+}
+
+.graphic-values {
+  width: calc(10% - 20px);
+  height: 100%;
+  float: left;
+  text-align: right;
+  margin-top: -12px;
+  padding-right: 20px;
+}
+
+.value {
+  font-size: 24px;
+  margin-bottom: 126px;
+}
+
+.graphic-field {
+  position: relative;
+  width: 90%;
+  height: 471px;
+  float: right;
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  margin-bottom: 75px;
+}
+
+.line-dark {
+  background-color: #ddd;
+}
+
+.line-light {
+  background-color: #eaeaea;
+}
+
+.graphic {
+  position: absolute;
+  width: 100%;
+  bottom: -40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.day-column {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.graphic-columns {
+  position: relative;
+  width: 115px;
+  margin-bottom: 15px;
+}
+
+.column {
+  position: absolute;
+  bottom: 0;
+  width: 55px;
+  height: 469px;
+}
+
+.column-blue {
+  left: 0;
+  background-color: #5a8aea;
+}
+
+.column-red {
+  background-color: #fe583e;
+  right: 0;
+}
+
+.column-title {
+  font-size: 22px;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.graphic-legend {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #e9e9e9;
+}
+
+.legend-item {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.item-color {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  margin-top: 8px;
+}
+
+.item-blue {
+  background-color: #5a8aea;
+}
+
+.item-red {
+  background-color: #fe583e;
+}
+
+.item-title {
+  display: inline-block;
+  font-size: 28px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.column-window {
+  position: absolute;
+  display: none;
+  width: 250px;
+  height: 100px;
+  top: -50px;
+  right: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  text-align: left;
+  z-index: 100;
+}
+
+.window-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.data-red {
+  margin: 5px;
+}
+
+.data-blue {
+  margin: 5px;
+}
+
+.data-color {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.data-blue > .data-color {
+  background-color: #5a8aea;
+}
+
+.data-red > .data-color {
+  background-color: #fe583e;
+}
+
+.data-text {
+  display: inline-block;
+  font-size: 20px;
+}

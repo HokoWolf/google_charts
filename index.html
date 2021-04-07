@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Charts</title>
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-form">
+            <div class="headline">
+                <div class="title">Beautiful Google Charts</div>
+                <div class="graphic-name">Daily Page Hits</div>
+            </div>
+
+            <div class="chart">
+                <div class="graphic-values">
+                    <div class="value">1,500</div>
+                    <div class="value">1,000</div>
+                    <div class="value">500</div>
+                    <div class="value">0</div>
+                </div>
+
+                <div class="graphic-field">
+                    <div class="graphic-background">
+                        <div class="line line-dark"></div>
+                        <div class="line line-light"></div>
+                        <div class="line line-dark"></div>
+                        <div class="line line-light"></div>
+                        <div class="line line-dark"></div>
+                        <div class="line line-light"></div>
+                        <div class="line line-dark"></div>
+                    </div>
+
+                    <div class="graphic">
+                        <div class="day-column">
+                            <div class="graphic-columns">
+                                <div class="column column-blue" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(1050 / 1500 * 469px);"></div>
+                                <div class="column column-red" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(600 / 1500 * 469px);"></div>
+                            </div>
+                            <div class="column-title">Sun</div>
+
+                            <div class="column-window">
+                                <div class="window-title">Sun</div>
+                                <div class="data-blue">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Page Views: <b>1050</b>
+                                    </div>
+                                </div>
+                                <div class="data-red">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Unique Views: <b>600</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="day-column">
+                            <div class="graphic-columns">
+                                <div class="column column-blue" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(1370 / 1500 * 469px);"></div>
+                                <div class="column column-red" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(910 / 1500 * 469px);"></div>
+                            </div>
+                            <div class="column-title">Mon</div>
+
+                            <div class="column-window">
+                                <div class="window-title">Mon</div>
+                                <div class="data-blue">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Page Views: <b>1370</b>
+                                    </div>
+                                </div>
+                                <div class="data-red">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Unique Views: <b>910</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="day-column">
+                            <div class="graphic-columns">
+                                <div class="column column-blue" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(660 / 1500 * 469px);"></div>
+                                <div class="column column-red" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(400 / 1500 * 469px);"></div>
+                            </div>
+                            <div class="column-title">Tue</div>
+
+                            <div class="column-window">
+                                <div class="window-title">Tue</div>
+                                <div class="data-blue">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Page Views: <b>660</b>
+                                    </div>
+                                </div>
+                                <div class="data-red">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Unique Views: <b>400</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="day-column">
+                            <div class="graphic-columns">
+                                <div class="column column-blue" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(1030 / 1500 * 469px);"></div>
+                                <div class="column column-red" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(540 / 1500 * 469px);"></div>
+                            </div>
+                            <div class="column-title">Wed</div>
+
+                            <div class="column-window">
+                                <div class="window-title">Wed</div>
+                                <div class="data-blue">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Page Views: <b>1030</b>
+                                    </div>
+                                </div>
+                                <div class="data-red">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Unique Views: <b>540</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="day-column">
+                            <div class="graphic-columns">
+                                <div class="column column-blue" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(1000 / 1500 * 469px);"></div>
+                                <div class="column column-red" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(480 / 1500 * 469px);"></div>
+                            </div>
+                            <div class="column-title">Thu</div>
+
+                            <div class="column-window">
+                                <div class="window-title">Thu</div>
+                                <div class="data-blue">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Page Views: <b>1000</b>
+                                    </div>
+                                </div>
+                                <div class="data-red">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Unique Views: <b>480</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="day-column">
+                            <div class="graphic-columns">
+                                <div class="column column-blue" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(1170 / 1500 * 469px);"></div>
+                                <div class="column column-red" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(960 / 1500 * 469px);"></div>
+                            </div>
+                            <div class="column-title">Fri</div>
+
+                            <div class="column-window">
+                                <div class="window-title">Fri</div>
+                                <div class="data-blue">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Page Views: <b>1170</b>
+                                    </div>
+                                </div>
+                                <div class="data-red">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Unique Views: <b>960</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="day-column">
+                            <div class="graphic-columns">
+                                <div class="column column-blue" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(660 / 1500 * 469px);"></div>
+                                <div class="column column-red" onmouseover="showInfo(this)" onmouseout="closeInfo(this)" style="height: calc(320 / 1500 * 469px);"></div>
+                            </div>
+                            <div class="column-title">Sat</div>
+
+                            <div class="column-window">
+                                <div class="window-title">Sat</div>
+                                <div class="data-blue">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Page Views: <b>660</b>
+                                    </div>
+                                </div>
+                                <div class="data-red">
+                                    <div class="data-color"></div>
+                                    <div class="data-text">
+                                        Unique Views: <b>320</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="graphic-legend">
+                    <div class="legend-item">
+                        <div class="item-color item-blue"></div>
+                        <div class="item-title">Page Views</div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="item-color item-red"></div>
+                        <div class="item-title">Unique Views</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
